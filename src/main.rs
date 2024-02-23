@@ -1,4 +1,4 @@
-use rd::ReadDirOptions;
+use rd_dir::ReadDirOptions;
 
 const HELP: &str = r#"
     USAGE: rd -[OPTIONS]... [FILE]
@@ -78,5 +78,5 @@ fn main() {
         }
     } 
 
-    println!("{}", rd::read_dir_to_string(read_dir_options));
+    println!("{}", rd_dir::read_dir_to_string(read_dir_options));
 }
